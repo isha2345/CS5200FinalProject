@@ -14,7 +14,7 @@
 This project has two components to it. The first is building a database using the files that were provided by Remo. The architecture for adding each file type to that database is included in "book_api.ipynb". Of note, at least one of each file type (.xlsx, .xml, and .mrc) was ran through this architecture, but not all files were added to the database. The code in this file must be ran before the GUI (graphical user interface), contained entirely in gui.py, can be ran and used.
 
 ## book_api.ipynb
-### Run this file to populate the database.
+#### Run this file to populate the database.
 Here, we handle files and read them into Pandas dataframes. Then we attempt to standardize the dataframes for insertion to the database. We then attempt to populate missing values based on ISBN using a Google Books API call. Then values from the Pandas dataframes are extracted and added to the database.
 
 ## gui.py
