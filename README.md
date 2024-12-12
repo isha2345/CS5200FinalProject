@@ -14,11 +14,11 @@
 This project has two components to it. The first is building a database using the files that were provided by Remo. The architecture for adding each file type to that database is included in "book_api.ipynb". Of note, at least one of each file type (.xlsx, .xml, and .mrc) was ran through this architecture, but not all files were added to the database. The code in this file must be ran before the GUI (graphical user interface), contained entirely in gui.py, can be ran and used.
 
 ## book_api.ipynb
-# Run this file to populate the database.
+### Run this file to populate the database.
 Here, we handle files and read them into Pandas dataframes. Then we attempt to standardize the dataframes for insertion to the database. We then attempt to populate missing values based on ISBN using a Google Books API call. Then values from the Pandas dataframes are extracted and added to the database.
 
 ## gui.py
-# Run this file to interact with the database through the GUI. 
+#### Run this file to interact with the database through the GUI. 
 Here, we can add book data based on ISBN to the database using the Google Books API call. One can also add a title and author but we weren't able to find a great API for this data alone. The goal was to automatically upload files entered by users, but there were formatting issues described below and in the powerpoint available in this repository. For this feature to be used, standardized entries would be required. Users can also query the database. The only book query we set up was based on genre, but the data is so variable that this method is not very well established yet. Future goals would involve added more premade queries for users.
 
 ## Notes
